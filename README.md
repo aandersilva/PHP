@@ -1,4 +1,1 @@
-PHP
-===
-
-simples framework para gerar model's direto do banco
+Fiz esses framworks de acordo com minha necessidade. Veja se se ajusta a sua também!
