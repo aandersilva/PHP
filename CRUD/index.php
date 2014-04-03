@@ -7,12 +7,18 @@ $crudDao = new CrudDao();
 
 
 //CREATE
-
-$arrayCols = array('COD_PRODUTO', 'PRODUTO', 'VALOR');
+$arrayCols = array('COD_PRODUTO', 'PRODUTO', 'VALOR');//Nomes dos campos da tabela
+/* Dados a serem gravados na tabela. 
+   EX: 'TIPO_DE_DADO(P, S, I),DADO A SER GRADO'
+   P=>PRIMARY KEY AUTO_INCREMENT
+   S=>STRING, DATE,...
+   I=>INT, FLOAT,...
+ */
 $arrayDados = array('P,NULL','S,TELEVISÃO','I,1000.99');
-$tabela = "TB_PRODUTO";
+$tabela = "TB_PRODUTO";//Nome da tabela
 
 $result = $crudDao->create($arrayCols, $arrayDados, $tabela);
+
 if($result){
     echo "PRODUTO CRIADO COM SUCESSO!!!.";
 }else{
